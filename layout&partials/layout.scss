@@ -1,0 +1,21 @@
+body {
+    background-color: #fcfcfc;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 10em;
+    
+.container {
+    max-width: 1200px;    
+    padding: 0 69px;
+    margin: 0 auto;     
+   
+  
+       
+}
+}
+
+@import 'news.scss';

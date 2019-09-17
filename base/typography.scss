@@ -1,0 +1,78 @@
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: $textColor;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
+}
+
+
+.mainMenu {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;   
+    .current {
+        color: $logoColor;
+    }
+    .mainMenuInner {
+        a {
+            font-size: 14px;
+            color: $textColorLight;
+        }
+        .currentInner  {
+            color: $logoColor;
+        }
+    }
+    .languages {
+        a {
+          font-size: 13px;
+          color: $textColorLight;  
+        }        
+        .current {
+            color: $logoColor;
+        }
+    }
+}
+
+.news {
+    .newsCardInfo {
+        h2 {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: $logoColor;
+            text-transform: uppercase; 
+        }
+        p {
+            font-size: 13px;
+            line-height: 16px;
+            color: #25231d;
+        }
+        .newsCardBtn {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: $logoColor;
+            text-transform: uppercase; 
+        }
+    }
+}
+
+.mainFooter {
+    color: $textColorLight;
+    font-size: 13px;
+    line-height: 16px;
+    a {
+        color: $textColorLight;
+    }
+    .columnItem.social a{
+        color: #3d5893;
+    }
+}

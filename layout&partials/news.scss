@@ -1,0 +1,91 @@
+.news {
+    margin-bottom:55px;
+    .sliderContainer {
+        position: relative;
+        padding: 0 51px;               
+    }
+    .newsSlider {
+        overflow: hidden;          
+    }
+    .slider {        
+        width: 100%;  
+        max-width: 960px; 
+        display: flex;
+        flex-wrap: nowrap; 
+        transition: transform 1s ease-out;
+    }
+    .newsCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100%;
+        margin-right: 15px;
+        flex-basis: calc( (100% - 32px)/3 );
+        &:last-of-type {
+            margin-right: 0;
+        }
+       flex-shrink: 0;
+       @media only screen and (max-width: 850px) {
+        flex-basis: 48%;
+       }
+       @media only screen and (max-width: 645px) {
+        flex-basis: 98%;
+       }
+    }    
+    .newsCardImage {
+        height: 140px;
+        overflow: hidden;
+        min-width: 100%;
+        border: 2px solid $btnColor;
+        img {
+            display: block;
+            height: auto;
+            min-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+    .newsCardInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 148px; 
+       
+        
+        h2 {
+            padding: 22px 0;
+            padding-bottom: 15px;
+        }
+
+        
+        .newsCardBtn {            
+            margin-top: auto;
+            padding: 6px 7px;
+            border: 2px solid $btnColor;
+            align-self: flex-start;
+            overflow: hidden;
+            cursor: pointer;
+            background-color: transparent;
+            transition: background-color .5s;
+            &:hover, &:focus {
+                background-color: $btnColor;
+            }
+        }
+    }
+    .arrowRight, .arrowLeft {
+        position: absolute;
+        top: 20%;        
+        color: #e3dfd8;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 80px 0px;
+    }
+    .arrowRight {
+        right: 0px;
+        padding-left: 15px;
+    }
+    .arrowLeft {
+        left: 0px;
+        padding-right: 15px;
+    }
+}

@@ -1,0 +1,19 @@
+
+
+$logoColor: #c31a1f;
+$btnColor: #cbc2b5;
+
+
+$textColor: #514d48;
+$textColorLight: #948d84;
+
+
+@mixin columnItem {
+    margin-right: 16px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 33%;          
+        &:last-child {
+            margin-right: 0;
+        }
+}
