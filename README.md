@@ -1,2 +1,4 @@
 # NewsSlider
-small custom slider on html/sass/js
+
+Responsive custom slider on html/sass/jsю
+No frameworks, libraries. 
